@@ -88,24 +88,3 @@ int factorialB(int b)
     }
     return factorialB;
 }
-
-/*
-int fact =1;
-if(numer<=1)
-{
-    fact=-1
-}
-else{
-    //calculo de factorial
-}
-
-if(numero==1)
-{
-
-
-}
-else
-{
-    factorial=n*factorial(n-1)
-}
-*/
