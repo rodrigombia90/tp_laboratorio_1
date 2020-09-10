@@ -1,84 +1,98 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "input.h"
+// agregar tambien la salida de datos por funcion
 
 int main()
 {
-    float a;
-    float b;
-    float resultadoSuma;
-    float resultadoResta;
-    float resultadoMulti;
+    int a;
+    int b;
+    int resultadoSuma;
+    int resultadoResta;
+    int resultadoMulti;
+    int eleccion;
     float resultadoDiv;
-    float factorialDeA=1;
-    float factorialDeB=1;
-    int eleccion1;
+    unsigned long long int  factorialDeA=1;
+    unsigned long long int factorialDeB=1;
 
-
+        system("cls");
         printf("***Bienvenido a la calculadora***\n");
         printf("A continuacion ingrese los dos operandos\n");
         printf("Operando 1: ");
-        scanf("%f", &a);
+        scanf("%d", &a);
         printf("Operando 2: ");
-        scanf("%f", &b);
+        scanf("%d", &b);
         system("cls");
 
-        printf("desea ver todos los resultados o alguno en especifico?\n");
-        printf("1.Resultado de Suma\n2.Resultado de Resta\n3.Resultado de Multiplicacion\n4.Resultado de Division\n5.Resultado de los factoriales\n6.Todos los resultados");
-        scanf("%d",&eleccion1);
+    do
+    {
+        system("cls");
+        printf("Desea ver todos los resultados o alguno en especifico?\n");
+        printf("1.Resultado de Suma\n");
+        printf("2.Resultado de Resta\n");
+        printf("3.Resultado de Multiplicacion\n");
+        printf("4.Resultado de Division\n");
+        printf("5.Resultado de los factoriales\n");
+        printf("6.Todos los resultados\n\n");
+        printf("7.Salir");
+        printf("Su eleccion: ");
+        scanf("%d",&eleccion);
 
-        switch(eleccion1)
+
+        switch(eleccion)
         {
         case 1:
-            resultadoSuma=a+b;
-            printf("El resultado de la suma es: %.2f",resultadoSuma);
+            resultadoSuma=sumarNumeros(a,b);
+            printf("El resultado de la suma es: %d\n\n",resultadoSuma);
+            system("pause");
             break;
         case 2:
-            resultadoResta=a-b;
-            printf("El resultado de la resta es: %.2f",resultadoResta);
+            resultadoResta=restarNumeros(a,b);
+            printf("El resultado de la resta es: %d\n\n",resultadoResta);
+            system("pause");
             break;
         case 3:
-            resultadoMulti=a*b;
-            printf("El resultado de la multiplicacion es: %.2f",resultadoMulti);
+            resultadoMulti=multiplicarNumeros(a,b);
+            printf("El resultado de la multiplicacion es: %d\n\n",resultadoMulti);
+            system("pause");
             break;
         case 4:
-            resultadoDiv=a/b;
-            printf("El resultado de la division es: %.2f",resultadoDiv);
+            resultadoDiv=dividirNumeros(a,b);
+            printf("El resultado de la division es: %.2f\n\n",resultadoDiv);
+            system("pause");
             break;
         case 5:
-            while(a>1)
-            {
-                factorialDeA*=a;
-                printf(" %f x",a);
-                a--;
-            }
-        printf(" 1 = %f\n",factorialDeB);
-        while(b>1)
-            {
-                factorialDeA*=b;
-                printf(" %f x",b);
-                a--;
-            }
-        printf(" 1 = %f\n",factorialDeA);
+            factorialDeA=factorialA(a);
+            printf("El factorial de %d es: %d\n\n",a,factorialDeA);
+            factorialDeB=factorialB(b);
+            printf("El factorial de %d es: %d\n\n",b,factorialDeB);
+            break;
+        case 6:
+            resultadoSuma=sumarNumeros(a,b);
+            resultadoResta=restarNumeros(a,b);
+            resultadoMulti=multiplicarNumeros(a,b);
+            resultadoDiv=dividirNumeros(a,b);
+            factorialDeA=factorialA(a);
+            factorialDeB=factorialB(b);
 
-        break;
+            printf("El resultado de la suma es: %.d\n\n",resultadoSuma);
+            printf("El resultado de la resta es: %.d\n\n",resultadoResta);
+            printf("El resultado de la multiplicacion es: %.d\n\n",resultadoMulti);
+            printf("El resultado de la division es: %.2f\n\n",resultadoDiv);
+            printf("El factorial de %d es: %d\n\n",a,factorialDeA);
+            printf("El factorial de %d es: %d\n\n",b,factorialDeB);
+            system("pause");
+            break;
+        case 7:
+            break;
+        default:
+            printf("Error, ingrese un numero valido\n");
+            system("pause");
+            break;
+            system("cls");
         }
-
-
-
-    resultadoSuma=a+b;
-    resultadoResta=a-b;
-    resultadoMulti=a*b;
-    resultadoDiv=a/b;
-    factorialDeA;
-    factorialDeB;
-
-    printf("El resultado de %.2f + %.2f es: %.2f\n",a,b,resultadoSuma);
-    printf("El resultado de %.2f - %.2f es: %.2f\n",a,b,resultadoResta);
-    printf("El resultado de %.2f * %.2f es: %.2f\n",a,b,resultadoMulti);
-    printf("El resultado de %.2f / %.2f es: %.2f\n",a,b,resultadoDiv);
-    printf("El factorial de %.2f es: %.2f y El factorial de %.2f es: %.2f",a,factorialDeA,b,factorialDeB);
-
-
+    }
+    while(eleccion!=7);
 
     return 0;
 }
