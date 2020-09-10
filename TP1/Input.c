@@ -1,5 +1,19 @@
 #include "input.h"
 
+int reingresarA(int a)
+{
+    printf("Reingrese operando 1: ");
+    scanf("%d",&a);
+    return a;
+}
+
+int reingresarB(int b)
+{
+    printf("Reingrese operando 2: ");
+    scanf("%d",&b);
+    return b;
+}
+
 int sumarNumeros (int a, int b)
 {
     int sumarNumeros;

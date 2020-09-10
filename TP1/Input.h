@@ -1,5 +1,18 @@
 #include <stdio.h>
-
+/** \brief Permite modificar el operando 1 (a)
+ *
+ * \param a int nuevo valor del operando 1
+ * \return int nuevo valor del operando 1
+ *
+ */
+int reingresarA(int a);
+/** \brief Permite modificar el operando 2 (b)
+ *
+ * \param b int nuevo valor del operando 2
+ * \return int nuevo valor del operando 2
+ *
+ */
+int reingresarB(int b);
 /** \brief suma los dos numero
  *
  * \param Operando 1

@@ -27,14 +27,17 @@ int main()
     do
     {
         system("cls");
-        printf("Desea ver todos los resultados o alguno en especifico?\n");
-        printf("1.Resultado de Suma\n");
-        printf("2.Resultado de Resta\n");
-        printf("3.Resultado de Multiplicacion\n");
-        printf("4.Resultado de Division\n");
-        printf("5.Resultado de los factoriales\n");
-        printf("6.Todos los resultados\n\n");
-        printf("7.Salir");
+        printf("El operando 1 es: %d y el operando 2 es: %d\n",a,b);
+        printf("A continuacion elija una opcion\n");
+        printf("1.Reingresar Operando 1\n");
+        printf("2.Reingresar Operando 2\n");
+        printf("3.Resultado de Suma\n");
+        printf("4.Resultado de Resta\n");
+        printf("5.Resultado de Multiplicacion\n");
+        printf("6.Resultado de Division\n");
+        printf("7.Resultado de los factoriales\n");
+        printf("8.Todos los resultados\n");
+        printf("9.Salir\n\n");
         printf("Su eleccion: ");
         scanf("%d",&eleccion);
 
@@ -42,32 +45,41 @@ int main()
         switch(eleccion)
         {
         case 1:
+            a = reingresarA(a);
+            printf("Reingreso de a: %d",a);
+            break;
+        case 2:
+            b = reingresarB(b);
+            printf("Reingreso de b: %d",b);
+            break;
+        case 3:
             resultadoSuma=sumarNumeros(a,b);
             printf("El resultado de la suma es: %d\n\n",resultadoSuma);
             system("pause");
             break;
-        case 2:
+        case 4:
             resultadoResta=restarNumeros(a,b);
             printf("El resultado de la resta es: %d\n\n",resultadoResta);
             system("pause");
             break;
-        case 3:
+        case 5:
             resultadoMulti=multiplicarNumeros(a,b);
             printf("El resultado de la multiplicacion es: %d\n\n",resultadoMulti);
             system("pause");
             break;
-        case 4:
+        case 6:
             resultadoDiv=dividirNumeros(a,b);
             printf("El resultado de la division es: %.2f\n\n",resultadoDiv);
             system("pause");
             break;
-        case 5:
+        case 7:
             factorialDeA=factorialA(a);
             printf("El factorial de %d es: %d\n\n",a,factorialDeA);
             factorialDeB=factorialB(b);
             printf("El factorial de %d es: %d\n\n",b,factorialDeB);
+            system("pause");
             break;
-        case 6:
+        case 8:
             resultadoSuma=sumarNumeros(a,b);
             resultadoResta=restarNumeros(a,b);
             resultadoMulti=multiplicarNumeros(a,b);
@@ -83,7 +95,7 @@ int main()
             printf("El factorial de %d es: %d\n\n",b,factorialDeB);
             system("pause");
             break;
-        case 7:
+        case 9:
             break;
         default:
             printf("Error, ingrese un numero valido\n");
@@ -92,7 +104,7 @@ int main()
             system("cls");
         }
     }
-    while(eleccion!=7);
+    while(eleccion!=9);
 
     return 0;
 }
