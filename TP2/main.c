@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "ArrayEmployees.h"
-#define TAM 7
+#define TAM 1000
 
 int main()
 {
