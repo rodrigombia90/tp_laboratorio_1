@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "ArrayEmployees.h"
-#define TAM 1000
+#define TAM 7
 
 int main()
 {
     char seguir = 's';
     char confirma;
     int proximoId=0001;
-    int rta;
-    int criterioOrden;
+    int flag=0;
     eEmpleado list[TAM];
+
     inicializarEmpleados(list,TAM);
     do
     {
@@ -19,10 +20,11 @@ int main()
         switch(menuOpciones())
         {
         case 1:
-            if(altaEmpleado(list, TAM, proximoId) == 0)//tendria que devolver 0
+            if(altaEmpleado(list, TAM, proximoId) == 0)
             {
-                proximoId++;
+                //proximoId++;
                 printf("ALTA EXITOSA!\n");
+                flag=1;
             }
             else
             {
@@ -30,28 +32,38 @@ int main()
             }
             break;
         case 2:
-            rta=bajaEmpleado(list, TAM);
-
-            if( rta == 0)
+            if(!flag)
             {
-                printf("Baja exitosa\n");
-            }
-            else if(rta == 2)
-            {
-                printf("Baja cancelada por usuario\n");
+                printf("\nTodavia no se cargaron empleados\n");
+                system("pause");
             }
             else
             {
-                printf("Se ha producido un error en la baja\n");
+                modificarEmpleado(list,TAM,proximoId);
             }
-
             break;
         case 3:
-
+            if(!flag)
+            {
+                printf("\nTodavia no se cargaron empleados\n");
+                system("pause");
+            }
+            else
+            {
+                bajaEmpleado(list, TAM);
+            }
             break;
         case 4:
-            system("cls");
-            ordenarEmpleados(list,TAM,criterioOrden);
+            if(!flag)
+            {
+                printf("\nTodavia no se cargaron empleados\n");
+                system("pause");
+            }
+            else
+            {
+                system("cls");
+                ordenarEmpleados(list,TAM);
+            }
             break;
         case 5:
             printf("Confirma salida?: ");
@@ -67,7 +79,6 @@ int main()
             printf("Opcion invalida!!!\n");
             break;
         }
-        system("pause");
     }
     while( seguir == 's');
     return 0;

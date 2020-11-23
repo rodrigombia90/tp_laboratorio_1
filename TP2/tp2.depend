@@ -20,3 +20,33 @@
 1601927974 c:\utn\github\tp_laboratorio_1\tp2\arrayemployees.h
 	<stdio.h>
 
+1606172028 source:c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp2\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"dataEmpleados.h"
+
+1606166850 c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp2\arrayemployees.h
+	<stdio.h>
+
+1606172143 source:c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+
+1606167027 source:c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp2\input.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1606167027 c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp2\input.h
+
+1606161938 c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp2\dataempleados.h
+
