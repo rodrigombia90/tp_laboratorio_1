@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1605905939 source:c:\utn\github\tp_laboratorio_1\tp4\tp4\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Employee.h"
+	"controller.h"
+
+1605906012 c:\utn\github\tp_laboratorio_1\tp4\tp4\employee.h
+	"LinkedList.h"
+
+1605905953 c:\utn\github\tp_laboratorio_1\tp4\tp4\linkedlist.h
+
+1605905945 c:\utn\github\tp_laboratorio_1\tp4\tp4\controller.h
+
+1605906013 source:c:\utn\github\tp_laboratorio_1\tp4\tp4\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Employee.h"
+
+1605906110 source:c:\utn\github\tp_laboratorio_1\tp4\tp4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"linkedList.h"
+	"controller.h"
+	"employee.h"
+
+1605906087 source:c:\utn\github\tp_laboratorio_1\tp4\tp4\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1605906155 source:c:\utn\github\tp_laboratorio_1\tp4\tp4\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
