@@ -33,7 +33,7 @@ float mostrarCalculos (float a, float b, float banderaCalculos)
             }
             else
             {
-                printf("Primero tengo que calcular");
+                printf("\n---Primero tengo que calcular---\n");
             }
 
             return 0;

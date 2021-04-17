@@ -10,3 +10,24 @@
 1599938170 c:\utn\github\tp_laboratorio_1\tp1\input.h
 	<stdio.h>
 
+1618675986 source:c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\tp1\input.c
+	"input.h"
+
+1618676014 c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\tp1\input.h
+	<stdio.h>
+
+1618675986 source:c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"input.h"
+	"Validaciones.h"
+
+1617579922 source:c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\tp1\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Validaciones.h"
+
+1617579740 c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp_laboratorio_1-master\tp1\validaciones.h
+

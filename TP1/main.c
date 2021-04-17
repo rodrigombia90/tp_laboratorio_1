@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "input.h"
+#include "Validaciones.h"
 int main()
 {
     float a;
@@ -9,12 +10,12 @@ int main()
     int banderaCalculos=0;
 
     system("cls");
-    printf("***Bienvenido a la calculadora***\n");
-    printf("A continuacion ingrese los dos operandos\n");
-    printf("Operando 1: ");
-    scanf("%f", &a);
-    printf("Operando 2: ");
-    scanf("%f", &b);
+    printf("\n\t---------------------------------\n");
+    printf("\t---Bienvenido a la calculadora---\n");
+    printf("\t---------------------------------\n");
+    printf("\tIngrese ingrese los dos operandos\n");
+    a=getFloat("\tIngrese Operando 1","Error, ingrese un numero");
+    b=getFloat("\tIngrese Operando 2","Error, ingrese un numero");
     system("cls");
 
     do
