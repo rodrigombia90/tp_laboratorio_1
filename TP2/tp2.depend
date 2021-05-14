@@ -50,3 +50,33 @@
 
 1606161938 c:\users\alumno_invitado\desktop\tp_laboratorio_1-master\tp2\dataempleados.h
 
+1621004468 source:c:\users\alumno_invitado\desktop\tp2\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"dataEmpleados.h"
+
+1620753113 c:\users\alumno_invitado\desktop\tp2\arrayemployees.h
+	<stdio.h>
+
+1620751795 c:\users\alumno_invitado\desktop\tp2\input.h
+
+1618676114 c:\users\alumno_invitado\desktop\tp2\dataempleados.h
+
+1620751795 source:c:\users\alumno_invitado\desktop\tp2\input.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1620755727 source:c:\users\alumno_invitado\desktop\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+

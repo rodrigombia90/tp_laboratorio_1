@@ -90,6 +90,7 @@ int myGets(char* cadena, int longitud)
 	}
 	return -1;
 }
+
 int getString(char* cadena, int longitud)
 {
 	int retorno=-1;

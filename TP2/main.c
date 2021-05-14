@@ -11,25 +11,26 @@ int main()
     char confirma;
     int proximoId=0001;
     int flag=0;
-    eEmpleado list[TAM];
+    eEmpleado empleados[TAM];
 
-    inicializarEmpleados(list,TAM);
+    inicializarEmpleados(empleados,TAM);
     do
     {
         system("cls");
         switch(menuOpciones())
         {
         case 1:
-            if(altaEmpleado(list, TAM, proximoId) == 0)
+            if(altaEmpleado(empleados, TAM, proximoId) == 0)
             {
-                //proximoId++;
-                printf("ALTA EXITOSA!\n");
+                proximoId++;
+                printf("\n\n\tALTA EXITOSA!\n\n\n");
                 flag=1;
             }
             else
             {
-                printf("Problema para realizar el alta\n");
+                printf("\tProblema para realizar el alta\n");
             }
+            system("pause");
             break;
         case 2:
             if(!flag)
@@ -39,7 +40,7 @@ int main()
             }
             else
             {
-                modificarEmpleado(list,TAM,proximoId);
+                modificarEmpleado(empleados,TAM,proximoId);
             }
             break;
         case 3:
@@ -50,7 +51,7 @@ int main()
             }
             else
             {
-                bajaEmpleado(list, TAM);
+                bajaEmpleado(empleados, TAM);
             }
             break;
         case 4:
@@ -62,10 +63,11 @@ int main()
             else
             {
                 system("cls");
-                ordenarEmpleados(list,TAM);
+                ordenarEmpleados(empleados,TAM);
             }
             break;
         case 5:
+            fflush(stdin);
             printf("Confirma salida?: ");
             fflush(stdin);
             scanf("%c", &confirma);
